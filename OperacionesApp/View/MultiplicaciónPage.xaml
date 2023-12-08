@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OperacionesApp.View.MultiplicaciónPage"
+             Title="MultiplicaciónPage">
+    <VerticalStackLayout>
+        <Entry x:Name="valor1" 
+        Keyboard="Numeric"              
+          Placeholder="0.00"
+          HorizontalTextAlignment="End"
+          ClearButtonVisibility="WhileEditing"/>
+
+        <Entry x:Name="valor2" Keyboard="Numeric"              
+           Placeholder="0.00"
+           HorizontalTextAlignment="End"
+           ClearButtonVisibility="WhileEditing" />
+
+        <Entry x:Name="valor3" Keyboard="Numeric"              
+       Placeholder="0.00"
+       HorizontalTextAlignment="End"
+       ClearButtonVisibility="WhileEditing" />
+
+
+        <Label FontSize="Large" x:Name="resultadoLabel"         
+      Text=""
+      VerticalOptions="End"
+      HorizontalOptions="Start"
+      Margin="115,0,0,10"
+     >
+        </Label>
+
+        <Button x:Name="BtConfirmation" Text="Calcular"                                        
+         BackgroundColor="{DynamicResource Success}"
+         Clicked="OnSumarClicked"
+ />
+        <Button Text="Limpiar Campos" Clicked="OnLimpiarCamposClicked" Margin="0,15" />
+    </VerticalStackLayout>
+</ContentPage>
