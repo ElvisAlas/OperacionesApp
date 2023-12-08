@@ -32,7 +32,7 @@ namespace OperacionesApp.View
         }
         private bool ValidarCampos()
         {
-            if (string.IsNullOrWhiteSpace(valor1.Text) || string.IsNullOrWhiteSpace(valor2.Text))
+            if (string.IsNullOrWhiteSpace(valor1.Text) || string.IsNullOrWhiteSpace(valor2.Text) || Convert.ToDouble(valor2.Text)== 0 )
             {
                 resultadoLabel.Text = "Todos los campos son obligatorios.";
 
